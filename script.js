@@ -1,9 +1,10 @@
 function calculateScore() {
     // Correct answers
     const correctAnswers = {
-        q1: 'δ: Q x Σ → Q ',
-        q2: '2',
-        q3: 'All of the mentioned'
+        q1: 'Deterministic Finite Automaton',
+        q2: 'It has exactly one transition for each input from a state',
+        q3: 'Array',
+        q4: 'Regular languages'
     };
 
     let score = 0;
@@ -17,7 +18,7 @@ function calculateScore() {
         if (userAnswer) {
             if (userAnswer.value === correctAnswers[question]) {
                 score++;
-                answers += `<p>${question.toUpperCase()} - Correct! (${correctAnswers[question]})</p>`;
+                answers += `<p class="correct">${question.toUpperCase()} - Correct! (${correctAnswers[question]})</p>`;
             } else {
                 answers += `<p class="incorrect">${question.toUpperCase()} - Incorrect. Correct answer: ${correctAnswers[question]}</p>`;
             }
