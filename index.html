@@ -11,54 +11,71 @@
 </head>
 <body>
     <div class="container mt-5">
-        <h1 class="text-center mb-4">Quiz Application</h1>
+        <h1 class="text-center mb-4">Tanya Quiz Application</h1>
         <form id="quizForm">
             <!-- Question 1 -->
             <div class="mb-4">
-                <h5>1. What is the capital of France?</h5>
+                <h5>1.DFA can be expressed as a 5 tuple(Q, Σ, δ, q0, F), where δ is the transition
+function defined as ___?</h5>
                 <div class="form-check">
                     <input class="form-check-input" type="radio" name="q1" value="Paris" id="q1a">
-                    <label class="form-check-label" for="q1a">Paris</label>
+                    <label class="form-check-label" for="q1a">δ: Σ → Q </label>
                 </div>
                 <div class="form-check">
                     <input class="form-check-input" type="radio" name="q1" value="London" id="q1b">
-                    <label class="form-check-label" for="q1b">London</label>
+                    <label class="form-check-label" for="q1b">δ: Q x Q → Σ</label>
                 </div>
                 <div class="form-check">
                     <input class="form-check-input" type="radio" name="q1" value="Rome" id="q1c">
-                    <label class="form-check-label" for="q1c">Rome</label>
+                    <label class="form-check-label" for="q1c">δ: Q → Q</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q1" value="Rome" id="q1d">
+                    <label class="form-check-label" for="q1d">δ: Q x Σ → Q</label>
                 </div>
             </div>
             <!-- Question 2 -->
             <div class="mb-4">
-                <h5>2. What is the largest planet in our Solar System?</h5>
+                <h5>2. How many minimum states are required in a DFA to find whether a given binary
+string has odd number of 0's or not, there can be any number of 1's.</h5>
                 <div class="form-check">
                     <input class="form-check-input" type="radio" name="q2" value="Earth" id="q2a">
-                    <label class="form-check-label" for="q2a">Earth</label>
+                    <label class="form-check-label" for="q2a">1</label>
                 </div>
                 <div class="form-check">
                     <input class="form-check-input" type="radio" name="q2" value="Jupiter" id="q2b">
-                    <label class="form-check-label" for="q2b">Jupiter</label>
+                    <label class="form-check-label" for="q2b">2</label>
                 </div>
                 <div class="form-check">
                     <input class="form-check-input" type="radio" name="q2" value="Mars" id="q2c">
-                    <label class="form-check-label" for="q2c">Mars</label>
+                    <label class="form-check-label" for="q2c">3</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q2" value="Mars" id="q2d">
+                    <label class="form-check-label" for="q2d">4</label>
                 </div>
             </div>
             <!-- Question 3 -->
             <div class="mb-4">
-                <h5>3. What is the smallest prime number?</h5>
+                <h5>3.  Finite state machine are not able to recognize Palindromes
+because:</h5>
                 <div class="form-check">
                     <input class="form-check-input" type="radio" name="q3" value="1" id="q3a">
-                    <label class="form-check-label" for="q3a">1</label>
+                    <label class="form-check-label" for="q3a"> Finite automata cannot deterministically find the
+midpoint </label>
                 </div>
                 <div class="form-check">
                     <input class="form-check-input" type="radio" name="q3" value="2" id="q3b">
-                    <label class="form-check-label" for="q3b">2</label>
+                    <label class="form-check-label" for="q3b">Finite automata cannot remember arbitarily large amount of data</label>
                 </div>
                 <div class="form-check">
                     <input class="form-check-input" type="radio" name="q3" value="3" id="q3c">
-                    <label class="form-check-label" for="q3c">3</label>
+                    <label class="form-check-label" for="q3c"> Even if the mid point is known, it cannot find whether the second half matches
+the first</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q3" value="3" id="q3d">
+                    <label class="form-check-label" for="q3c">  All of the mentioned </label>
                 </div>
             </div>
             <!-- Submit Button -->
