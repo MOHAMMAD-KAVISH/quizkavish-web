@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz Website</title>
+    <title>DFA Quiz Website</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
@@ -11,71 +11,86 @@
 </head>
 <body>
     <div class="container mt-5">
-        <h1 class="text-center mb-4">Tanya Quiz Application</h1>
+        <h1 class="text-center mb-4">DFA Quiz Application</h1>
         <form id="quizForm">
             <!-- Question 1 -->
             <div class="mb-4">
-                <h5>1.DFA can be expressed as a 5 tuple(Q, Σ, δ, q0, F), where δ is the transition
-function defined as ___?</h5>
+                <h5>1. What does DFA stand for in automata theory?</h5>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="q1" value="Paris" id="q1a">
-                    <label class="form-check-label" for="q1a">δ: Σ → Q </label>
+                    <input class="form-check-input" type="radio" name="q1" value="Deterministic Finite Automaton" id="q1a">
+                    <label class="form-check-label" for="q1a">Deterministic Finite Automaton</label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="q1" value="London" id="q1b">
-                    <label class="form-check-label" for="q1b">δ: Q x Q → Σ</label>
+                    <input class="form-check-input" type="radio" name="q1" value="Data Flow Analysis" id="q1b">
+                    <label class="form-check-label" for="q1b">Data Flow Analysis</label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="q1" value="Rome" id="q1c">
-                    <label class="form-check-label" for="q1c">δ: Q → Q</label>
+                    <input class="form-check-input" type="radio" name="q1" value="Digital Finite Automaton" id="q1c">
+                    <label class="form-check-label" for="q1c">Digital Finite Automaton</label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="q1" value="Rome" id="q1d">
-                    <label class="form-check-label" for="q1d">δ: Q x Σ → Q</label>
+                    <input class="form-check-input" type="radio" name="q1" value="Dynamic Finite Automaton" id="q1d">
+                    <label class="form-check-label" for="q1d">Dynamic Finite Automaton</label>
                 </div>
             </div>
             <!-- Question 2 -->
             <div class="mb-4">
-                <h5>2. How many minimum states are required in a DFA to find whether a given binary
-string has odd number of 0's or not, there can be any number of 1's.</h5>
+                <h5>2. Which of the following statements is true for a DFA?</h5>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="q2" value="Earth" id="q2a">
-                    <label class="form-check-label" for="q2a">1</label>
+                    <input class="form-check-input" type="radio" name="q2" value="It has multiple transitions for the same input from a state" id="q2a">
+                    <label class="form-check-label" for="q2a">It has multiple transitions for the same input from a state</label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="q2" value="Jupiter" id="q2b">
-                    <label class="form-check-label" for="q2b">2</label>
+                    <input class="form-check-input" type="radio" name="q2" value="It has exactly one transition for each input from a state" id="q2b">
+                    <label class="form-check-label" for="q2b">It has exactly one transition for each input from a state</label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="q2" value="Mars" id="q2c">
-                    <label class="form-check-label" for="q2c">3</label>
+                    <input class="form-check-input" type="radio" name="q2" value="It can have epsilon transitions" id="q2c">
+                    <label class="form-check-label" for="q2c">It can have epsilon transitions</label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="q2" value="Mars" id="q2d">
-                    <label class="form-check-label" for="q2d">4</label>
+                    <input class="form-check-input" type="radio" name="q2" value="None of the above" id="q2d">
+                    <label class="form-check-label" for="q2d">None of the above</label>
                 </div>
             </div>
             <!-- Question 3 -->
             <div class="mb-4">
-                <h5>3.  Finite state machine are not able to recognize Palindromes
-because:</h5>
+                <h5>3. A DFA can be simulated using which of the following data structures?</h5>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="q3" value="1" id="q3a">
-                    <label class="form-check-label" for="q3a"> Finite automata cannot deterministically find the
-midpoint </label>
+                    <input class="form-check-input" type="radio" name="q3" value="Stack" id="q3a">
+                    <label class="form-check-label" for="q3a">Stack</label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="q3" value="2" id="q3b">
-                    <label class="form-check-label" for="q3b">Finite automata cannot remember arbitarily large amount of data</label>
+                    <input class="form-check-input" type="radio" name="q3" value="Queue" id="q3b">
+                    <label class="form-check-label" for="q3b">Queue</label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="q3" value="3" id="q3c">
-                    <label class="form-check-label" for="q3c"> Even if the mid point is known, it cannot find whether the second half matches
-the first</label>
+                    <input class="form-check-input" type="radio" name="q3" value="Linked List" id="q3c">
+                    <label class="form-check-label" for="q3c">Linked List</label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="q3" value="3" id="q3d">
-                    <label class="form-check-label" for="q3c">  All of the mentioned </label>
+                    <input class="form-check-input" type="radio" name="q3" value="Array" id="q3d">
+                    <label class="form-check-label" for="q3d">Array</label>
+                </div>
+            </div>
+            <!-- Question 4 -->
+            <div class="mb-4">
+                <h5>4. Which of the following languages is accepted by a DFA?</h5>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q4" value="Context-free languages" id="q4a">
+                    <label class="form-check-label" for="q4a">Context-free languages</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q4" value="Context-sensitive languages" id="q4b">
+                    <label class="form-check-label" for="q4b">Context-sensitive languages</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q4" value="Regular languages" id="q4c">
+                    <label class="form-check-label" for="q4c">Regular languages</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q4" value="Unrestricted languages" id="q4d">
+                    <label class="form-check-label" for="q4d">Unrestricted languages</label>
                 </div>
             </div>
             <!-- Submit Button -->
