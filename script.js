@@ -1,9 +1,9 @@
 function calculateScore() {
     // Correct answers
     const correctAnswers = {
-        q1: 'Paris',
-        q2: 'Jupiter',
-        q3: '2'
+        q1: 'δ: Q x Σ → Q ',
+        q2: '2',
+        q3: 'All of the mentioned'
     };
 
     let score = 0;
