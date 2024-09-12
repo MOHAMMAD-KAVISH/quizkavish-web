@@ -1,34 +1,43 @@
-function calculateScore() {
-    // Correct answers
-    const correctAnswers = {
-        q1: 'Deterministic Finite Automaton',
-        q2: 'It has exactly one transition for each input from a state',
-        q3: 'Array',
-        q4: 'Regular languages'
-    };
+// Correct answers object
+const correctAnswers = {
+    q1: "All NFAs are not DFAs",
+    q2: "DFA",
+    q3: "DFA",
+    q4: "NFA",
+    q5: "DFA",
+    q6: "NFA",
+    q7: "Less",
+    q8: "All DFAs are derived from NFAs",
+    q9: "NFA",
+    q10: "NFA"
+};
 
+// Function to calculate score and display correct answers
+function calculateScore() {
     let score = 0;
-    let totalQuestions = Object.keys(correctAnswers).length;
+    const totalQuestions = 10;
     let answers = '';
 
-    // Check each answer
-    for (let question in correctAnswers) {
-        let userAnswer = document.querySelector(`input[name="${question}"]:checked`);
+    // Loop through each question and check if the answer is correct
+    for (let i = 1; i <= totalQuestions; i++) {
+        const question = `q${i}`;
+        const selectedAnswer = document.querySelector(`input[name="${question}"]:checked`);
         
-        if (userAnswer) {
-            if (userAnswer.value === correctAnswers[question]) {
+        if (selectedAnswer) {
+            const userAnswer = selectedAnswer.value;
+            if (userAnswer === correctAnswers[question]) {
                 score++;
-                answers += `<p class="correct">${question.toUpperCase()} - Correct! (${correctAnswers[question]})</p>`;
+                answers += `<p class="correct">${i}. Correct answer: ${correctAnswers[question]}</p>`;
             } else {
-                answers += `<p class="incorrect">${question.toUpperCase()} - Incorrect. Correct answer: ${correctAnswers[question]}</p>`;
+                answers += `<p class="incorrect">${i}. Your answer: ${userAnswer}. Correct answer: ${correctAnswers[question]}</p>`;
             }
         } else {
-            answers += `<p class="incorrect">${question.toUpperCase()} - No answer selected. Correct answer: ${correctAnswers[question]}</p>`;
+            answers += `<p class="incorrect">${i}. Not answered. Correct answer: ${correctAnswers[question]}</p>`;
         }
     }
 
-    // Show results
-    document.getElementById('score').innerText = `You scored ${score} out of ${totalQuestions}`;
-    document.getElementById('answers').innerHTML = answers;
+    // Display score and answers
     document.getElementById('resultSection').style.display = 'block';
+    document.getElementById('score').textContent = `Your score: ${score} out of ${totalQuestions}`;
+    document.getElementById('answers').innerHTML = answers;
 }
