@@ -3,111 +3,240 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DFA Quiz Website</title>
+    <title>DFA and NFA Quiz</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container mt-5">
-        <h1 class="text-center mb-4">Love u Tanya Quiz Application</h1>
+        <h1 class="text-center mb-4">Automata Theory: DFA and NFA Quiz</h1>
         <form id="quizForm">
             <!-- Question 1 -->
             <div class="mb-4">
-                <h5>1. What does DFA stand for in automata theory?</h5>
+                <h5>1. Which statement is correct?</h5>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="q1" value="Deterministic Finite Automaton" id="q1a">
-                    <label class="form-check-label" for="q1a">Deterministic Finite Automaton</label>
+                    <input class="form-check-input" type="radio" name="q1" value="All NFAs are DFAs" id="q1a">
+                    <label class="form-check-label" for="q1a">All NFAs are DFAs</label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="q1" value="Data Flow Analysis" id="q1b">
-                    <label class="form-check-label" for="q1b">Data Flow Analysis</label>
+                    <input class="form-check-input" type="radio" name="q1" value="All NFAs are not DFAs" id="q1b">
+                    <label class="form-check-label" for="q1b">All NFAs are not DFAs</label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="q1" value="Digital Finite Automaton" id="q1c">
-                    <label class="form-check-label" for="q1c">Digital Finite Automaton</label>
+                    <input class="form-check-input" type="radio" name="q1" value="both a and b" id="q1c">
+                    <label class="form-check-label" for="q1c">both a and b</label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="q1" value="Dynamic Finite Automaton" id="q1d">
-                    <label class="form-check-label" for="q1d">Dynamic Finite Automaton</label>
+                    <input class="form-check-input" type="radio" name="q1" value="None of these" id="q1d">
+                    <label class="form-check-label" for="q1d">None of these</label>
                 </div>
             </div>
+
             <!-- Question 2 -->
             <div class="mb-4">
-                <h5>2. Which of the following statements is true for a DFA?</h5>
+                <h5>2. For each symbolic representation of the alphabet, there is only one state transition in?</h5>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="q2" value="It has multiple transitions for the same input from a state" id="q2a">
-                    <label class="form-check-label" for="q2a">It has multiple transitions for the same input from a state</label>
+                    <input class="form-check-input" type="radio" name="q2" value="FA" id="q2a">
+                    <label class="form-check-label" for="q2a">FA</label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="q2" value="It has exactly one transition for each input from a state" id="q2b">
-                    <label class="form-check-label" for="q2b">It has exactly one transition for each input from a state</label>
+                    <input class="form-check-input" type="radio" name="q2" value="NFA" id="q2b">
+                    <label class="form-check-label" for="q2b">NFA</label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="q2" value="It can have epsilon transitions" id="q2c">
-                    <label class="form-check-label" for="q2c">It can have epsilon transitions</label>
+                    <input class="form-check-input" type="radio" name="q2" value="DFA" id="q2c">
+                    <label class="form-check-label" for="q2c">DFA</label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="q2" value="None of the above" id="q2d">
-                    <label class="form-check-label" for="q2d">None of the above</label>
+                    <input class="form-check-input" type="radio" name="q2" value="All of these" id="q2d">
+                    <label class="form-check-label" for="q2d">All of these</label>
                 </div>
             </div>
+
             <!-- Question 3 -->
             <div class="mb-4">
-                <h5>3. A DFA can be simulated using which of the following data structures?</h5>
+                <h5>3. Which of the following cannot use Empty String transition?</h5>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="q3" value="Stack" id="q3a">
-                    <label class="form-check-label" for="q3a">Stack</label>
+                    <input class="form-check-input" type="radio" name="q3" value="FA" id="q3a">
+                    <label class="form-check-label" for="q3a">FA</label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="q3" value="Queue" id="q3b">
-                    <label class="form-check-label" for="q3b">Queue</label>
+                    <input class="form-check-input" type="radio" name="q3" value="NFA" id="q3b">
+                    <label class="form-check-label" for="q3b">NFA</label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="q3" value="Linked List" id="q3c">
-                    <label class="form-check-label" for="q3c">Linked List</label>
+                    <input class="form-check-input" type="radio" name="q3" value="DFA" id="q3c">
+                    <label class="form-check-label" for="q3c">DFA</label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="q3" value="Array" id="q3d">
-                    <label class="form-check-label" for="q3d">Array</label>
+                    <input class="form-check-input" type="radio" name="q3" value="All of these" id="q3d">
+                    <label class="form-check-label" for="q3d">All of these</label>
                 </div>
             </div>
+
             <!-- Question 4 -->
             <div class="mb-4">
-                <h5>4. Which of the following languages is accepted by a DFA?</h5>
+                <h5>4. Which of the following can use Empty String transition?</h5>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="q4" value="Context-free languages" id="q4a">
-                    <label class="form-check-label" for="q4a">Context-free languages</label>
+                    <input class="form-check-input" type="radio" name="q4" value="FA" id="q4a">
+                    <label class="form-check-label" for="q4a">FA</label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="q4" value="Context-sensitive languages" id="q4b">
-                    <label class="form-check-label" for="q4b">Context-sensitive languages</label>
+                    <input class="form-check-input" type="radio" name="q4" value="NFA" id="q4b">
+                    <label class="form-check-label" for="q4b">NFA</label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="q4" value="Regular languages" id="q4c">
-                    <label class="form-check-label" for="q4c">Regular languages</label>
+                    <input class="form-check-input" type="radio" name="q4" value="DFA" id="q4c">
+                    <label class="form-check-label" for="q4c">DFA</label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="q4" value="Unrestricted languages" id="q4d">
-                    <label class="form-check-label" for="q4d">Unrestricted languages</label>
+                    <input class="form-check-input" type="radio" name="q4" value="All of these" id="q4d">
+                    <label class="form-check-label" for="q4d">All of these</label>
                 </div>
             </div>
+
+            <!-- Question 5 -->
+            <div class="mb-4">
+                <h5>5. Dead state may be required in which of the following?</h5>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q5" value="FA" id="q5a">
+                    <label class="form-check-label" for="q5a">FA</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q5" value="NFA" id="q5b">
+                    <label class="form-check-label" for="q5b">NFA</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q5" value="DFA" id="q5c">
+                    <label class="form-check-label" for="q5c">DFA</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q5" value="All of these" id="q5d">
+                    <label class="form-check-label" for="q5d">All of these</label>
+                </div>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="mb-4">
+                <h5>6. Dead state is not required in which of the following?</h5>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q6" value="FA" id="q6a">
+                    <label class="form-check-label" for="q6a">FA</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q6" value="NFA" id="q6b">
+                    <label class="form-check-label" for="q6b">NFA</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q6" value="DFA" id="q6c">
+                    <label class="form-check-label" for="q6c">DFA</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q6" value="All of these" id="q6d">
+                    <label class="form-check-label" for="q6d">All of these</label>
+                </div>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="mb-4">
+                <h5>7. The total time needed to run any input string in DFA is ……. than time required in NFA.</h5>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q7" value="more" id="q7a">
+                    <label class="form-check-label" for="q7a">more</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q7" value="Less" id="q7b">
+                    <label class="form-check-label" for="q7b">Less</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q7" value="equal" id="q7c">
+                    <label class="form-check-label" for="q7c">equal</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q7" value="None of these" id="q7d">
+                    <label class="form-check-label" for="q7d">None of these</label>
+                </div>
+            </div>
+
+            <!-- Question 8 -->
+            <div class="mb-4">
+                <h5>8. Which statement is correct about DFA?</h5>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q8" value="All DFAs are derived from NFAs" id="q8a">
+                    <label class="form-check-label" for="q8a">All DFAs are derived from NFAs</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q8" value="All NFAs are derived from DFAs" id="q8b">
+                    <label class="form-check-label" for="q8b">All NFAs are derived from DFAs</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q8" value="Both can’t be derived from each other" id="q8c">
+                    <label class="form-check-label" for="q8c">Both can’t be derived from each other</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q8" value="Both a and b" id="q8d">
+                    <label class="form-check-label" for="q8d">Both a and b</label>
+                </div>
+            </div>
+
+            <!-- Question 9 -->
+            <div class="mb-4">
+                <h5>9. When it is not fixed that with a specific input where to go next on which state, then it is called?</h5>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q9" value="DFA" id="q9a">
+                    <label class="form-check-label" for="q9a">DFA</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q9" value="NFA" id="q9b">
+                    <label class="form-check-label" for="q9b">NFA</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q9" value="DFSA" id="q9c">
+                    <label class="form-check-label" for="q9c">DFSA</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q9" value="None of these" id="q9d">
+                    <label class="form-check-label" for="q9d">None of these</label>
+                </div>
+            </div>
+
+            <!-- Question 10 -->
+            <div class="mb-4">
+                <h5>10. In which of the following, its not mandatory to generate transition for each alphabet in the language from a given state to its final state?</h5>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q10" value="DFA" id="q10a">
+                    <label class="form-check-label" for="q10a">DFA</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q10" value="NFA" id="q10b">
+                    <label class="form-check-label" for="q10b">NFA</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q10" value="DFSA" id="q10c">
+                    <label class="form-check-label" for="q10c">DFSA</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q10" value="None of these" id="q10d">
+                    <label class="form-check-label" for="q10d">None of these</label>
+                </div>
+            </div>
+
             <!-- Submit Button -->
-            <button type="button" class="btn btn-primary" onclick="calculateScore()">Submit</button>
+            <div class="text-center">
+                <button type="button" class="btn btn-primary" onclick="calculateScore()">Submit Quiz</button>
+            </div>
         </form>
 
         <!-- Result Section -->
-        <div id="resultSection" class="mt-5">
-            <h2>Your Results:</h2>
+        <div id="resultSection" class="mt-5" style="display: none;">
+            <h3>Your Score:</h3>
             <p id="score"></p>
+            <h4>Correct Answers:</h4>
             <div id="answers"></div>
         </div>
     </div>
 
-    <!-- Bootstrap JS (Optional for some Bootstrap components) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Custom JS -->
     <script src="script.js"></script>
 </body>
 </html>
