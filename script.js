@@ -3,21 +3,21 @@ function calculateScore() {
     let score = 0;
     let answers = `
         <ul>
-            <li>1. All of the above</li>
-            <li>2. If the row is not present, replace will add a new row and update will not do anything.</li>
-            <li>3. Tables</li>
-            <li>4. DELETE does not free the space containing the table and TRUNCATE free the space containing the table</li>
-            <li>5. Aborted transaction</li>
+            <li>1. Foreign Key</li>
+            <li>2. AUTOINCREMENT</li>
+            <li>3. Repeatable Read prevents non-repeatable reads but allows phantom reads</li>
+            <li>4. Deletes the specified column and its data from the table</li>
+            <li>5. To create a temporary view for complex subqueries</li>
         </ul>
     `;
 
     // Correct Answers
     const correctAnswers = {
-        q1: "All of the above",
-        q2: "replace will add a new row",
-        q3: "Tables",
-        q4: "DELETE does not free space",
-        q5: "Aborted transaction"
+        q1: "Foreign Key",
+        q2: "AUTOINCREMENT",
+        q3: "Repeatable Read prevents non-repeatable reads but allows phantom reads",
+        q4: "Deletes the column",
+        q5: "Temporary view"
     };
 
     // Check answers
