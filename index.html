@@ -3,132 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DBMS Quiz</title>
+    <title>Advanced DBMS Quiz</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
 </head>
 <body oncopy="return false" oncut="return false" onpaste="return false">
     <div class="container">
-        <h1>DBMS Quiz</h1>
+        <h1>Advanced DBMS & SQL Quiz</h1>
         <form id="quizForm">
             <!-- Question 1 -->
             <div class="mb-4">
-                <h5>1. What is/are the drawback(s) of using DBMS?</h5>
+                <h5>1. Which of the following is used to implement referential integrity?</h5>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="q1" value="Requires training" id="q1a">
-                    <label class="form-check-label" for="q1a">Requires training</label>
+                    <input class="form-check-input" type="radio" name="q1" value="Foreign Key" id="q1a">
+                    <label class="form-check-label" for="q1a">Foreign Key</label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="q1" value="Complex to use" id="q1b">
-                    <label class="form-check-label" for="q1b">Complex to use</label>
+                    <input class="form-check-input" type="radio" name="q1" value="Primary Key" id="q1b">
+                    <label class="form-check-label" for="q1b">Primary Key</label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="q1" value="It is costly" id="q1c">
-                    <label class="form-check-label" for="q1c">It is costly</label>
+                    <input class="form-check-input" type="radio" name="q1" value="Check Constraint" id="q1c">
+                    <label class="form-check-label" for="q1c">Check Constraint</label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="q1" value="All of the above" id="q1d">
-                    <label class="form-check-label" for="q1d">All of the above</label>
+                    <input class="form-check-input" type="radio" name="q1" value="Index" id="q1d">
+                    <label class="form-check-label" for="q1d">Index</label>
                 </div>
             </div>
 
             <!-- Question 2 -->
             <div class="mb-4">
-                <h5>2. Choose the correct statement regarding replace and update in database:</h5>
+                <h5>2. Which SQL keyword is used to automatically increase a numeric value in a column when a new row is inserted?</h5>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="q2" value="replace will not do anything but update will add a new row" id="q2a">
-                    <label class="form-check-label" for="q2a">If the row which we want to replace is not present, replace will not do anything but update will add a new row.</label>
+                    <input class="form-check-input" type="radio" name="q2" value="AUTOINCREMENT" id="q2a">
+                    <label class="form-check-label" for="q2a">AUTOINCREMENT</label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="q2" value="Update delete the old data" id="q2b">
-                    <label class="form-check-label" for="q2b">Update delete the old data and then add new data while replace always makes changes in current data.</label>
+                    <input class="form-check-input" type="radio" name="q2" value="SEQUENCE" id="q2b">
+                    <label class="form-check-label" for="q2b">SEQUENCE</label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="q2" value="replace will add a new row" id="q2c">
-                    <label class="form-check-label" for="q2c">If the row is not present, replace will add a new row and update will not do anything.</label>
+                    <input class="form-check-input" type="radio" name="q2" value="INCREMENT" id="q2c">
+                    <label class="form-check-label" for="q2c">INCREMENT</label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="q2" value="Replace is faster" id="q2d">
-                    <label class="form-check-label" for="q2d">Replace is faster than update because it always adds new data instead of making changes in existing one.</label>
+                    <input class="form-check-input" type="radio" name="q2" value="SERIAL" id="q2d">
+                    <label class="form-check-label" for="q2d">SERIAL</label>
                 </div>
             </div>
 
             <!-- Question 3 -->
             <div class="mb-4">
-                <h5>3. RDBMS consists of a collection of?</h5>
+                <h5>3. Which of the following is true about transaction isolation levels in SQL?</h5>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="q3" value="Tables" id="q3a">
-                    <label class="form-check-label" for="q3a">Tables</label>
+                    <input class="form-check-input" type="radio" name="q3" value="Read Committed allows dirty reads" id="q3a">
+                    <label class="form-check-label" for="q3a">Read Committed allows dirty reads.</label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="q3" value="Fields" id="q3b">
-                    <label class="form-check-label" for="q3b">Fields</label>
+                    <input class="form-check-input" type="radio" name="q3" value="Serializable prevents all concurrent transactions" id="q3b">
+                    <label class="form-check-label" for="q3b">Serializable prevents all concurrent transactions.</label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="q3" value="Records" id="q3c">
-                    <label class="form-check-label" for="q3c">Records</label>
+                    <input class="form-check-input" type="radio" name="q3" value="Read Uncommitted does not allow phantom reads" id="q3c">
+                    <label class="form-check-label" for="q3c">Read Uncommitted does not allow phantom reads.</label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="q3" value="Keys" id="q3d">
-                    <label class="form-check-label" for="q3d">Keys</label>
+                    <input class="form-check-input" type="radio" name="q3" value="Repeatable Read prevents non-repeatable reads but allows phantom reads" id="q3d">
+                    <label class="form-check-label" for="q3d">Repeatable Read prevents non-repeatable reads but allows phantom reads.</label>
                 </div>
             </div>
 
             <!-- Question 4 -->
             <div class="mb-4">
-                <h5>4. Which of the following statements is true in SQL?</h5>
+                <h5>4. What does the SQL statement `ALTER TABLE ... DROP COLUMN` do?</h5>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="q4" value="DELETE does not free space" id="q4a">
-                    <label class="form-check-label" for="q4a">DELETE does not free the space containing the table and TRUNCATE free the space containing the table</label>
+                    <input class="form-check-input" type="radio" name="q4" value="Deletes the column" id="q4a">
+                    <label class="form-check-label" for="q4a">Deletes the specified column and its data from the table.</label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="q4" value="Both free space" id="q4b">
-                    <label class="form-check-label" for="q4b">Both DELETE and TRUNCATE free the space containing the table</label>
+                    <input class="form-check-input" type="radio" name="q4" value="Renames the column" id="q4b">
+                    <label class="form-check-label" for="q4b">Renames the column in the table.</label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="q4" value="Neither free space" id="q4c">
-                    <label class="form-check-label" for="q4c">Both DELETE and TRUNCATE do not free the space containing the table</label>
+                    <input class="form-check-input" type="radio" name="q4" value="Adds a new column" id="q4c">
+                    <label class="form-check-label" for="q4c">Adds a new column to the table.</label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="q4" value="DELETE frees space" id="q4d">
-                    <label class="form-check-label" for="q4d">DELETE free the space containing the table and TRUNCATE does not free the space containing the table</label>
+                    <input class="form-check-input" type="radio" name="q4" value="Deletes rows" id="q4d">
+                    <label class="form-check-label" for="q4d">Deletes rows in the table.</label>
                 </div>
             </div>
 
             <!-- Question 5 -->
             <div class="mb-4">
-                <h5>5. In DBMS, a transaction that has not been completed successfully is called _______.</h5>
+                <h5>5. What is the purpose of the `WITH` clause in SQL?</h5>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="q5" value="Compensating transaction" id="q5a">
-                    <label class="form-check-label" for="q5a">Compensating transaction</label>
+                    <input class="form-check-input" type="radio" name="q5" value="Temporary view" id="q5a">
+                    <label class="form-check-label" for="q5a">To create a temporary view for complex subqueries.</label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="q5" value="Aborted transaction" id="q5b">
-                    <label class="form-check-label" for="q5b">Aborted transaction</label>
+                    <input class="form-check-input" type="radio" name="q5" value="Create index" id="q5b">
+                    <label class="form-check-label" for="q5b">To create an index on a column.</label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="q5" value="Active transaction" id="q5c">
-                    <label class="form-check-label" for="q5c">Active transaction</label>
+                    <input class="form-check-input" type="radio" name="q5" value="Update tables" id="q5c">
+                    <label class="form-check-label" for="q5c">To update multiple tables simultaneously.</label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="q5" value="Partially committed transaction" id="q5d">
-                    <label class="form-check-label" for="q5d">Partially committed transaction</label>
+                    <input class="form-check-input" type="radio" name="q5" value="Define table" id="q5d">
+                    <label class="form-check-label" for="q5d">To define a new table in the database.</label>
                 </div>
             </div>
 
             <!-- Submit Button -->
-            <div class="text-center">
-                <button type="button" class="btn btn-primary" onclick="calculateScore()">Submit Quiz</button>
-            </div>
+            <button type="button" class="btn btn-primary" onclick="calculateScore()">Submit</button>
         </form>
 
         <!-- Result Section -->
-        <div id="resultSection" class="mt-5" style="display: none;">
-            <h3>Your Score:</h3>
-            <p id="score"></p>
-            <h4>Correct Answers:</h4>
+        <div id="resultSection" style="display:none; margin-top: 20px;">
+            <h2>Your Score: <span id="score"></span></h2>
+            <h3>Correct Answers:</h3>
             <div id="answers"></div>
         </div>
     </div>
 </body>
 </html>
+
