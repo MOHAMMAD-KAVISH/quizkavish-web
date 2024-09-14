@@ -1,43 +1,45 @@
-// Correct answers object
-const correctAnswers = {
-    q1: "All NFAs are not DFAs",
-    q2: "DFA",
-    q3: "DFA",
-    q4: "NFA",
-    q5: "DFA",
-    q6: "NFA",
-    q7: "Less",
-    q8: "All DFAs are derived from NFAs",
-    q9: "NFA",
-    q10: "NFA"
-};
-
-// Function to calculate score and display correct answers
 function calculateScore() {
+    const quizForm = document.forms['quizForm'];
     let score = 0;
-    const totalQuestions = 10;
-    let answers = '';
+    let answers = `
+        <ul>
+            <li>1. All of the above</li>
+            <li>2. If the row is not present, replace will add a new row and update will not do anything.</li>
+            <li>3. Tables</li>
+            <li>4. DELETE does not free the space containing the table and TRUNCATE free the space containing the table</li>
+            <li>5. Aborted transaction</li>
+        </ul>
+    `;
 
-    // Loop through each question and check if the answer is correct
-    for (let i = 1; i <= totalQuestions; i++) {
-        const question = `q${i}`;
-        const selectedAnswer = document.querySelector(`input[name="${question}"]:checked`);
-        
-        if (selectedAnswer) {
-            const userAnswer = selectedAnswer.value;
-            if (userAnswer === correctAnswers[question]) {
-                score++;
-                answers += `<p class="correct">${i}. Correct answer: ${correctAnswers[question]}</p>`;
-            } else {
-                answers += `<p class="incorrect">${i}. Your answer: ${userAnswer}. Correct answer: ${correctAnswers[question]}</p>`;
-            }
-        } else {
-            answers += `<p class="incorrect">${i}. Not answered. Correct answer: ${correctAnswers[question]}</p>`;
+    // Correct Answers
+    const correctAnswers = {
+        q1: "All of the above",
+        q2: "replace will add a new row",
+        q3: "Tables",
+        q4: "DELETE does not free space",
+        q5: "Aborted transaction"
+    };
+
+    // Check answers
+    for (let i = 1; i <= 5; i++) {
+        const answer = quizForm[`q${i}`].value;
+        if (answer === correctAnswers[`q${i}`]) {
+            score++;
         }
     }
 
-    // Display score and answers
+    // Display result
     document.getElementById('resultSection').style.display = 'block';
-    document.getElementById('score').textContent = `Your score: ${score} out of ${totalQuestions}`;
+    document.getElementById('score').innerText = `${score} / 5`;
     document.getElementById('answers').innerHTML = answers;
+
+    // Disable submit button after quiz is submitted
+    document.querySelector('button').disabled = true;
 }
+
+// Disable copy-paste
+document.addEventListener('DOMContentLoaded', function() {
+    document.body.oncopy = function() { return false; }
+    document.body.oncut = function() { return false; }
+    document.body.onpaste = function() { return false; }
+});
